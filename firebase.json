@@ -1,0 +1,17 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "autopilot-kitchen",
+          "configurations": {
+            "web": "1:1035955921599:web:6ff6b2ca18973131e1dc0a"
+          }
+        }
+      }
+    }
+  }
+}
