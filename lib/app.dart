@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import 'core/theme/app_theme.dart';
-import 'features/landing/presentation/landing_page.dart';
-import 'features/landing/services/waitlist_service.dart';
 
 class AutopilotKitchenWebsiteApp extends StatelessWidget {
   const AutopilotKitchenWebsiteApp({
     super.key,
-    required this.waitlistService,
+    required this.router,
   });
 
-  final WaitlistService waitlistService;
+  final GoRouter router;
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Autopilot Kitchen',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light(),
-      home: LandingPage(waitlistService: waitlistService),
+      routerConfig: router,
     );
   }
 }

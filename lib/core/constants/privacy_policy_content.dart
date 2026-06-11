@@ -1,4 +1,4 @@
-import 'contact_info.dart';
+import 'app_links.dart';
 
 abstract final class PrivacyPolicyContent {
   static const lastUpdated = 'June 4, 2026';
@@ -68,7 +68,7 @@ abstract final class PrivacyPolicyContent {
       title: 'Contact',
       body:
           'Questions about this privacy policy or your waitlist data?\n\n'
-          'Email: ${ContactInfo.email}',
+          'Email: ${AppLinks.supportEmail}',
     ),
   ];
 }

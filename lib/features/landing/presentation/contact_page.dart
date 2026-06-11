@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/constants/contact_info.dart';
+import '../../../core/constants/app_links.dart';
 import '../../../core/constants/landing_breakpoints.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_spacing.dart';
@@ -49,7 +49,7 @@ class ContactPage extends StatelessWidget {
                 ),
                 const SizedBox(height: AppSpacing.sm),
                 SelectableText(
-                  ContactInfo.email,
+                  AppLinks.supportEmail,
                   style: theme.textTheme.bodyLarge?.copyWith(
                     color: AppColors.sageDark,
                     fontWeight: FontWeight.w600,

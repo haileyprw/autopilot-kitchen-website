@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/landing_breakpoints.dart';
 import '../../../core/constants/privacy_policy_content.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../core/widgets/legal_page_app_bar.dart';
 import '../../../core/theme/app_spacing.dart';
 
 class PrivacyPolicyPage extends StatelessWidget {
@@ -13,9 +14,7 @@ class PrivacyPolicyPage extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Privacy Policy'),
-      ),
+      appBar: const LegalPageAppBar(title: 'Privacy Policy'),
       body: SelectionArea(
         child: Center(
           child: SingleChildScrollView(

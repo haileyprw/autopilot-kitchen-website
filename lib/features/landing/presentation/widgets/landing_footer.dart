@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../../core/constants/app_links.dart';
 import '../../../../core/constants/landing_breakpoints.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/widgets/app_logo.dart';
 import '../contact_page.dart';
-import '../privacy_policy_page.dart';
-import '../terms_of_service_page.dart';
 
 class LandingFooter extends StatelessWidget {
   const LandingFooter({super.key});
@@ -91,23 +91,11 @@ class _FooterLinks extends StatelessWidget {
       children: [
         _FooterLink(
           label: 'Privacy Policy',
-          onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute<void>(
-                builder: (_) => const PrivacyPolicyPage(),
-              ),
-            );
-          },
+          onTap: () => context.go(AppLinks.privacyPath),
         ),
         _FooterLink(
           label: 'Terms',
-          onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute<void>(
-                builder: (_) => const TermsOfServicePage(),
-              ),
-            );
-          },
+          onTap: () => context.go(AppLinks.termsPath),
         ),
         _FooterLink(
           label: 'Contact',

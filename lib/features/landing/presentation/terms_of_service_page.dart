@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/landing_breakpoints.dart';
 import '../../../core/constants/terms_of_service_content.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../core/widgets/legal_page_app_bar.dart';
 import '../../../core/theme/app_spacing.dart';
 
 class TermsOfServicePage extends StatelessWidget {
@@ -13,9 +14,7 @@ class TermsOfServicePage extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Terms of Service'),
-      ),
+      appBar: const LegalPageAppBar(title: 'Terms of Service'),
       body: SelectionArea(
         child: Center(
           child: SingleChildScrollView(

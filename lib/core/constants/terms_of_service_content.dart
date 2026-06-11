@@ -1,4 +1,4 @@
-import 'contact_info.dart';
+import 'app_links.dart';
 
 abstract final class TermsOfServiceContent {
   static const lastUpdated = 'June 4, 2026';
@@ -63,7 +63,7 @@ abstract final class TermsOfServiceContent {
       title: 'Contact',
       body:
           'Questions about these terms?\n\n'
-          'Email: ${ContactInfo.email}',
+          'Email: ${AppLinks.supportEmail}',
     ),
   ];
 }

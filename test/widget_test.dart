@@ -1,14 +1,15 @@
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:autopilot_kitchen_website/app.dart';
+import 'package:autopilot_kitchen_website/core/routing/app_router.dart';
 import 'package:autopilot_kitchen_website/features/landing/services/waitlist_service.dart';
 
 void main() {
   testWidgets('Landing page renders hero headline', (tester) async {
+    final router = createAppRouter(waitlistService: const LocalWaitlistService());
+
     await tester.pumpWidget(
-      const AutopilotKitchenWebsiteApp(
-        waitlistService: LocalWaitlistService(),
-      ),
+      AutopilotKitchenWebsiteApp(router: router),
     );
     await tester.pumpAndSettle();
 
