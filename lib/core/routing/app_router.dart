@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 
+import '../../features/landing/presentation/contact_page.dart';
 import '../../features/landing/presentation/landing_page.dart';
 import '../../features/landing/presentation/privacy_policy_page.dart';
 import '../../features/landing/presentation/terms_of_service_page.dart';
@@ -21,6 +22,10 @@ GoRouter createAppRouter({required WaitlistService waitlistService}) {
       GoRoute(
         path: AppLinks.termsPath,
         builder: (context, state) => const TermsOfServicePage(),
+      ),
+      GoRoute(
+        path: AppLinks.contactPath,
+        builder: (context, state) => const ContactPage(),
       ),
     ],
   );

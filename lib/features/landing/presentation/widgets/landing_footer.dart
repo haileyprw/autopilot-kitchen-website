@@ -6,8 +6,6 @@ import '../../../../core/constants/landing_breakpoints.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/widgets/app_logo.dart';
-import '../contact_page.dart';
-
 class LandingFooter extends StatelessWidget {
   const LandingFooter({super.key});
 
@@ -99,13 +97,7 @@ class _FooterLinks extends StatelessWidget {
         ),
         _FooterLink(
           label: 'Contact',
-          onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute<void>(
-                builder: (_) => const ContactPage(),
-              ),
-            );
-          },
+          onTap: () => context.go(AppLinks.contactPath),
         ),
       ],
     );

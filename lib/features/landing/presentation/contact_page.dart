@@ -4,6 +4,7 @@ import '../../../core/constants/app_links.dart';
 import '../../../core/constants/landing_breakpoints.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/widgets/legal_page_app_bar.dart';
 
 class ContactPage extends StatelessWidget {
   const ContactPage({super.key});
@@ -13,9 +14,7 @@ class ContactPage extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Contact'),
-      ),
+      appBar: const LegalPageAppBar(title: 'Contact'),
       body: Center(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(
