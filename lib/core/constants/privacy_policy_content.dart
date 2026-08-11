@@ -11,10 +11,14 @@ abstract final class PrivacyPolicyContent {
           'what we collect on our website and in the Autopilot Kitchen app, how we use it, '
           'and the choices you have.\n\n'
           'Our website is a marketing page and waitlist for the Autopilot Kitchen meal '
-          'planning app. We keep things simple and only collect what we need.',
+          'planning app. The mobile app lets you plan meals, save recipes, and generate '
+          'grocery lists. We keep things simple and only collect what we need.',
     ),
+
+    // —— Website (waitlist) ——
+
     (
-      title: 'Information we collect',
+      title: 'Website — Information we collect',
       body:
           'When you join the waitlist, we collect:\n\n'
           '• Your email address\n'
@@ -26,7 +30,7 @@ abstract final class PrivacyPolicyContent {
           'payment information, precise location, or other sensitive data on this website.',
     ),
     (
-      title: 'How we use your information',
+      title: 'Website — How we use your information',
       body:
           'We use your waitlist email to:\n\n'
           '• Let you know when Autopilot Kitchen is available\n'
@@ -36,7 +40,7 @@ abstract final class PrivacyPolicyContent {
           'We do not sell your email address. We do not use it for unrelated marketing.',
     ),
     (
-      title: 'How we store your information',
+      title: 'Website — How we store your information',
       body:
           'Waitlist signups and app account data are stored in Google Firebase (Firestore '
           'and related Firebase services), a cloud platform operated by Google. Data is '
@@ -46,7 +50,7 @@ abstract final class PrivacyPolicyContent {
           'can guarantee complete security.',
     ),
     (
-      title: 'Your choices',
+      title: 'Website — Your choices',
       body:
           'You can ask us to remove your email from the waitlist at any time by contacting '
           'us at the address below. You can also unsubscribe from launch emails once they begin.\n\n'
